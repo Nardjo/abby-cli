@@ -1,0 +1,28 @@
+{
+  "name": "abby-cli",
+  "version": "0.1.0",
+  "description": "Command-line client and AgentSkill for the official Abby API",
+  "type": "module",
+  "bin": {
+    "abby-cli": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "bun build src/index.ts --outfile dist/abby-cli.js --target bun",
+    "dev": "bun run src/index.ts"
+  },
+  "dependencies": {
+    "commander": "^13.0.0",
+    "picocolors": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.7.0"
+  },
+  "keywords": ["abby", "cli", "api", "billing", "invoices", "crm"],
+  "license": "MIT",
+  "homepage": "https://github.com/Nardjo/abby-cli",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nardjo/abby-cli.git"
+  }
+}
